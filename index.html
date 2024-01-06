@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,90 +13,245 @@
 <body>
  <section id="header" >
   <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4 header-title "><img src="./images/header-icon.jpg" height="60px" class="header-icon me-3">   Safwa Orthodox</span>
+    <header class="d-flex flex-wrap py-3  border-bottom" id="header-icon-logo">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0  link-body-emphasis text-decoration-none" >
+        <img src="./images/header-icon.jpg" height="60px" class="header-icon m-3">
+        <span class="fs-4 header-title ">Safwa Orthodox</span>
       </a>
-      <ul class="nav nav-pills ">
-        <li class="nav-item"><a href="./index.html" class="nav-link header-title fs-5">الرئيسية</a></li>
-        <li class="nav-item"><a href="./bible.html" class="nav-link header-title fs-5">الكتاب المقدس</a></li>
-        <li class="nav-item"><a href="./catchism.html" class="nav-link header-title fs-5">التعليم المسيحي</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link header-title fs-5">اتصل بنا</a></li>
-        <li class="nav-item"><a href="./about.html" class="nav-link header-title fs-5">من نحن</a></li>
+      <button  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span  id="custom-togler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav nav-pills mt-3 mb-3 navbar-left">
+        <li class="nav-item"><a href="./index.html" class="nav-link header-title hovver-nav">الصفحة الرئيسية</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link header-title dropdown-toggle hovver-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            حول المسيحية الأرثوذكسية
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./catchism.html">التعليم الكتيبي</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">لماذا المسيحية الأرثوذكسية</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">الأسرار السبع</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">الأهمية والطقوس</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link header-title dropdown-toggle hovver-nav " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            الكنائس 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">هيكل الكنيسة الأرثوذكسية</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">الكنائس الأرثوذكسية الكبيرة في جميع أنحاء العالم</a></li>
+          </ul>
+        </li>    
+        <li class="nav-item dropdown">
+          <a class="nav-link header-title dropdown-toggle hovver-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            قصص القديسين 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">سير ذاتية والمعجزات</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">إسهامات في المسيحية الأرثوذكسية</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">تأملات شخصية</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link header-title dropdown-toggle hovver-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            قسم التبرع 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">منصة التبرع الآمنة</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">شفافية</a></li>
+          </ul>
+        </li>   
+        <li class="nav-item dropdown">
+          <a class="nav-link header-title dropdown-toggle hovver-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            موارد للمؤمنين  
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">موارد الصلاة والتأمل </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">مواد الدراسة عبر الإنترنت</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">روابط للنشرات والكتب الأرثوذكسية</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item dropdown">
+          <a class="nav-link header-title dropdown-toggle hovver-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            الشهادات  
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">قصص التحول</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">الراحة في المسيحية الأرثوذكسية</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item dropdown">
+          <a class="nav-link header-title dropdown-toggle hovver-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            الاتصال والمجتمع
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">معلومات الاتصال</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">منتديات ومساحات المجتمع</a></li>
+          </ul>
+        </li>        
       </ul>
+      </div>
+      </div>
     </header>
   </div>
- </section> 
- <section id="hero">
-  <div class="container mt-5 p-5 mb-5">
-    <div class="row">
-      <div class="col-lg-7 col-sm-12 pb-5">
-        <p class="fs-2 ">مرحبًا بك في موقع صفوة الأرثوذكسية، حيث تتجسد الإيمان والتقاليد بروح وحدة. نحن هنا لنقدم لك رحلة في عالم الأرثوذكسية، حيث تتلاقى التاريخ والإيمان ليخلقا تجربة مميزة.
-
-      في هذا المكان المقدس، ندعوك لاستكشاف جمال الأرثوذكسية، والانغماس في أعماق الإيمان، والانطلاق في رحلة التحول الروحي. انضم إلينا وشاركنا في بناء مجتمع يسعى للقرب من الله والنمو في محبة المسيح.</p>
-        <button type="button" class="mt-4 button-header mb-4 ">لمزيد من المعلومات والتفاصيل</button>
-        </div>
-        <div class="col-lg-5 col-sm-12">
-          <img src="./images/Jesu.jpg" height="550px" class="d-block w-100  mb-4">
-        </div>
-    </div> 
-  </div>
-</section>
-<section id="taughts" style="background-image: url(./images/Diseño\ sin\ título\ \(3\).png); " class="mb-5">
-  <div class="container  p-5 d-flex align-items-center justify-content-center" style="height: 350px;">
-    <div class="text-center align-items-center  rounded-3">
-      <h1 class="lead quote fs-1 header-title ">
-        
-      </h1>
-      <p class="lead quoter header-title">
-  
-      </p>
-
+ </section >
+ <section id="hero-main-page"> 
+ <div class="px-4 py-5  text-center">
+  <h1 class="display-5 fw-bold text-body-emphasis header-title " style="color: white !important;">لماذا الأرثوذكسية هي الحقيقة؟</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4 " style="color: white !important;">استكشف العمق، اكتشف الجمال</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-lg px-4 gap-3 header-cta-button 
+      ">ابدأ رحلتك الروحية اليوم</button>
     </div>
   </div>
-  </section>
+</div>
+</section>
+<section id="fetured">
+  <div class="container  py-5 my-2">
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="d-inline-block mb-2 text-primary-emphasis">لماذا المسيحية الأرثوذكسية</h3>
+          <p class="card-text mb-auto">استكشف الأسباب العميقة التي يعتبرها الكثيرون الحقيقة الزمنية والثابتة. من التقاليد الجذرية إلى الالتزام الثابت بالنمو الروحي، تجذب الأرثوذكسية الباحثين عن الأصالة والاتصال الحقيقي مع الإله</p>
+          <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            أكمل القراءة
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+            <image href="./images/2053915.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+          </svg>        
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="d-inline-block mb-2 text-success-emphasis">الشهادات </h3>
+          <p class="mb-auto">اكتشف قصص التحول الفريدة التي ترويها أفراد قرروا اعتناق الأرثوذكسية. كيف غيرت إيمانهم حياتهم وكيف وجدوا المعنى والاتصال الحقيقي مع الله من خلال هذا الطريق القديم والجميل</p>
+          <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            أكمل القراءة
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+            <image href="./images/2053890.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+          </svg>         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+  <div class="container px-4 py-5 my-2" id="featured-3">
+    <h2 class="pb-2 border-bottom justify-content-end"> فهم المسيحية الأرثوذكسية للخلاص</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="orthodox-cross" class="bi" width="2em" height="2em"><path d="M35.5,64h-7a.99943.99943,0,0,1-1-1V47.835l-3.25684-.86914A.99914.99914,0,0,1,23.501,46V39a.99942.99942,0,0,1,1.25781-.96582L27.5,38.76465V28H10.501a.99973.99973,0,0,1-1-1V20a.99973.99973,0,0,1,1-1H27.5V16H24.501a.99973.99973,0,0,1-1-1V8a.99973.99973,0,0,1,1-1H27.5V1a.99974.99974,0,0,1,1-1h7a.99974.99974,0,0,1,1,1V7h2.999a.99973.99973,0,0,1,1,1v7a.99973.99973,0,0,1-1,1H36.5v3H53.499a.99973.99973,0,0,1,1,1v7a.99973.99973,0,0,1-1,1H36.5V41.165l3.25684.86914A.99914.99914,0,0,1,40.499,43v7a1.00107,1.00107,0,0,1-.39062.793.9906.9906,0,0,1-.86719.17285L36.5,50.23535V63A.99943.99943,0,0,1,35.5,64Zm-6-2h5V48.93359a.99944.99944,0,0,1,1.25781-.96582l2.74121.73047V43.76855l-3.25683-.86914A.99914.99914,0,0,1,34.5,41.93359V27a.99974.99974,0,0,1,1-1H52.499V21H35.5a.99974.99974,0,0,1-1-1V15a.99974.99974,0,0,1,1-1h2.999V9H35.5a.99974.99974,0,0,1-1-1V2h-5V8a.99974.99974,0,0,1-1,1H25.501v5H28.5a.99974.99974,0,0,1,1,1v5a.99974.99974,0,0,1-1,1H11.501v5H28.5a.99974.99974,0,0,1,1,1V40.06641a1.0011,1.0011,0,0,1-.39062.793.99.99,0,0,1-.86719.17285L25.501,40.30176v4.92969l3.25683.86914a.99914.99914,0,0,1,.74219.96582Z"></path><path d="M29.499 16H28.5a1 1 0 010-2h.999a1 1 0 010 2zM29.499 9H28.5a1 1 0 010-2h.999a1 1 0 010 2zM35.5 16H34.499a1 1 0 010-2H35.5a1 1 0 010 2zM35.5 9H34.499a1 1 0 010-2H35.5a1 1 0 010 2zM29.499 28H28.5a1 1 0 010-2h.999a1 1 0 010 2zM29.499 21H28.5a1 1 0 010-2h.999a1 1 0 010 2zM35.5 28H34.499a1 1 0 010-2H35.5a1 1 0 010 2zM35.5 21H34.499a1 1 0 010-2H35.5a1 1 0 010 2zM35.501 42.93359a1.02829 1.02829 0 01-.25879-.0332l-1.001-.2666a1.00058 1.00058 0 01.51563-1.93359l1.001.2666a1.00024 1.00024 0 01-.25683 1.96679zM29.5 41.333a.9817.9817 0 01-.25879-.03418l-.999-.2666a.99964.99964 0 11.51562-1.93164l.999.2666A.99985.99985 0 0129.5 41.333zM35.501 49.93359a.9817.9817 0 01-.25879-.03418l-1.001-.26757a.99964.99964 0 11.51563-1.93164l1.001.26757a.99985.99985 0 01-.25683 1.96582zM29.5 48.333a.9817.9817 0 01-.25879-.03418l-.999-.2666a.99964.99964 0 11.51562-1.93164l.999.2666A.99985.99985 0 0129.5 48.333z"></path></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">التجسد والكفارة</h3>
+        <p>
+          الخطوة الأساسية في الخلاص، وفقًا للمسيحية الأرثوذكسية، هي التجسد الإلهي ليسوع المسيح. أصبح الله إنسانًا في شخص يسوع ليصالح البشرية مع الله. يُعتبر الكفارة، وخاصة الموت التكفيري للمسيح على الصليب، وسيلة تُغفر بها خطايا البشرية وتُتغلب على الفاصل بين الله والإنسان</p>
+        <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+          تعرَّف على المزيد
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="church" width="2em" height="2em"><path d="M486.85,512H25.15a15,15,0,1,1,0-30h461.7a15,15,0,0,1,0,30Z"></path><path d="M370.43 505.79a15 15 0 01-15-15V209.88a15 15 0 1130 0V490.79A15 15 0 01370.43 505.79zM141.57 505.79a15 15 0 01-15-15V210.93a15 15 0 0130 0V490.79A15 15 0 01141.57 505.79z"></path><path d="M486.85,324.35a14.92,14.92,0,0,1-9.8-3.65l-221-191L35,320.7A15,15,0,1,1,15.34,298L246.19,98.55a15,15,0,0,1,19.62,0L496.66,298a15,15,0,0,1-9.81,26.35Z"></path><path d="M451.75 508a15 15 0 01-15-15V280.28a15 15 0 0130 0V493A15 15 0 01451.75 508zM60.25 507.51a15 15 0 01-15-15V280.14a15 15 0 0130 0V492.51A15 15 0 0160.25 507.51zM256 124.9a15 15 0 01-15-15V15a15 15 0 0130 0v94.9A15 15 0 01256 124.9z"></path><path d="M292.62 69.85H219.38a15 15 0 010-30h73.24a15 15 0 110 30zM304.57 505.79a15 15 0 01-15-15V343a33.57 33.57 0 00-67.14 0V490.79a15 15 0 01-30 0V343a63.57 63.57 0 01127.14 0V490.79A15 15 0 01304.57 505.79zM271.07 240.07H240.93a15 15 0 010-30h30.14a15 15 0 010 30z"></path></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">الإيمان والعماد</h3>
+        <p>
+          يُعتبر الإيمان خطوة حاسمة في الخلاص. يُطلب من المؤمنين أن يضعوا ثقتهم في المسيح وأن يقبلوه كربان ومخلص. يُعتبر العماد سرًا يُدشن به الأفراد في حياة الكنيسة ويتلقون فيه غفران الخطايا. إنه عمل رمزي وتحولي يُمثل غسل الخطايا والولادة الجديدة في المسيح</p>
+        <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+          تعرَّف على المزيد
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="bible"width="2em" height="2em"><path d="M435.613,308.953a8,8,0,0,0,8-8V43.226A27.257,27.257,0,0,0,416.387,16h-340a8,8,0,0,0-8,8V488a8,8,0,0,0,8,8h340a27.257,27.257,0,0,0,27.226-27.226,8,8,0,0,0-16,0A11.239,11.239,0,0,1,416.387,480H377.872a23.925,23.925,0,0,0,1.283-7.691v-6.245h8.631a8,8,0,0,0,0-16h-8.631V425.046a8.321,8.321,0,0,1,7.633-8.445,8.655,8.655,0,0,1,8.808,8.221v8.083a24.108,24.108,0,0,0,7.434,17.366,23.812,23.812,0,0,0,17.713,6.607A24.2,24.2,0,0,0,443.6,432.453V338.869a24.747,24.747,0,0,0-24.719-24.719,8.009,8.009,0,0,1-8-8V294.522A24.2,24.2,0,0,0,388.027,270.1a23.819,23.819,0,0,0-17.715,6.6,24.117,24.117,0,0,0-7.436,17.368V325.8a8.009,8.009,0,0,1-8,8H339.188a8,8,0,0,0,0,16h15.688a24.027,24.027,0,0,0,24-24V294.07a8,8,0,0,1,8.4-7.99,8.326,8.326,0,0,1,7.6,8.442V306.15a24.027,24.027,0,0,0,24,24,8.729,8.729,0,0,1,8.719,8.719v93.584a8.328,8.328,0,0,1-7.6,8.443,8,8,0,0,1-8.4-7.991v-8.312c0-.133,0-.266-.01-.4a24.681,24.681,0,0,0-25.5-23.578,24.182,24.182,0,0,0-22.936,24.43v46.963a8.617,8.617,0,0,1-2.479,6.09,7.342,7.342,0,0,1-4.98,1.9h-.938a8.327,8.327,0,0,1-7.6-8.442V404.939a24.109,24.109,0,0,0-7.435-17.366,23.8,23.8,0,0,0-17.713-6.606,24.2,24.2,0,0,0-22.852,24.425v36.672a8,8,0,0,1-8.4,7.992,8.328,8.328,0,0,1-7.6-8.443V374.264a24.487,24.487,0,0,1,24.46-24.46h6.706a8,8,0,0,0,0-16h-6.706a40.506,40.506,0,0,0-40.46,40.46v67.349a24.2,24.2,0,0,0,22.852,24.425,23.8,23.8,0,0,0,17.714-6.607,24.112,24.112,0,0,0,7.434-17.367V405.392a8.328,8.328,0,0,1,7.6-8.443,8,8,0,0,1,8.4,7.99v66.918A24.961,24.961,0,0,0,332.511,480H84.387V466.064H250.462a8,8,0,1,0,0-16H84.387V436.129H250.462a8,8,0,0,0,0-16H129.291V100.111a8,8,0,1,0-16,0V420.129h-28.9V32h28.9V70.77a8,8,0,0,0,16,0V32h287.1a11.239,11.239,0,0,1,11.226,11.226V300.953A8,8,0,0,0,435.613,308.953Z"></path><path d="M255.664,309.33h48a8,8,0,0,0,8-8v-72h47.843a8,8,0,0,0,8-8v-48a8,8,0,0,0-8-8H311.664v-40a8,8,0,0,0-8-8h-48a8,8,0,0,0-8,8v40H199.507a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8h48.157v72A8,8,0,0,0,255.664,309.33Zm-48.157-96v-32h48.157a8,8,0,0,0,8-8v-40h32v40a8,8,0,0,0,8,8h47.843v32H303.664a8,8,0,0,0-8,8v72h-32v-72a8,8,0,0,0-8-8Z"></path></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">التأله (الإلهوية) والتقديس</h3>
+        <p>
+          التأله أو الإلهوية هو مفهوم مركزي في المسيحية الأرثوذكسية. يتضمن عملية أن يصبح الإنسان واحدًا مع الله والنمو في التشابه معه. من خلال حياة التوبة والصلاة والمشاركة في الأسرار، يسعى المؤمنون إلى التقديس - التحول المستمر إلى صورة المسيح. يُعتبر التأله رحلة مدى الحياة للنمو الروحي والاتحاد مع الله.</p>
+        <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+          تعرَّف على المزيد
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
 <hr/>
-<section id="carousel">
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/andriy-tod-FpyG-Jqf62M-unsplash.jpg" class="d-block w-100" alt="orthodox church">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/dave-herring-jwVhVBN0M9A-unsplash.jpg" class="d-block w-100" alt="orthodox church">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/yura-timoshenko-irlVK0o0KOM-unsplash.jpg" class="d-block w-100" alt="orthodox church">
-      </div>
+<section style="background-image: url(./images/2054021.jpg);">
+  <div class="container my-2 " >
+    <div class="p-5 text-center rounded-3">
+      <h1 class="lead quote fs-1" style="color: white;"></h1>
+      <p class="lead quoter" style="color: white;">
+        
+      </p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 </section>
-<hr>
+<hr/>
+<section>
+  <div class="px-4 pt-5 my-3 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">مقدمة إلى الأرثوذكسية الشرقية</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">تجسد الأرثوذكسية الشرقية قاعدة حية للإيمان المسيحي، حافظت على التقاليد الأصيلة والروحانية العميقة عبر العصور. بينما يشدنا التاريخ إلى أحضانها، تبرز الأرثوذكسية بتمسكها بالتقاليد وفهمها العميق للإيمان. تحمل معها قصص القديسين والمجامع التي شكلت مسارها، وتزخر بالطقوس الجميلة التي تعزز التواصل الروحي والتأمل. ببساطة، الأرثوذكسية تعبّر عن رحلة إيمان لا تنضب وترتكز على أسس قوية من التوازن والتسامح.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-lg px-4 gap-3 header-cta-button">تعرَّف على المزيد</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="./images/2053890.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="feet">
   <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
       <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
         </a>
-        <span class="mb-3 mb-md-0 text-body-secondary" style="color: #ebd045 !important;">© 2023 Saftwa Orthodox</span>
+        <span class="text-muted " style="color: white !important;">© 2023 Safwa Orthodox</span>
       </div>
-  
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-      </ul>
+        <!-- <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="facebook"><path fill="#3A5A98" d="M7.9 255.8C7.9 118.9 119 7.9 256 7.9s248 111 248 247.9-111.1 247.9-248 247.9c-137 0-248.1-111-248.1-247.9z"></path><path fill="#345387" d="M431.4 80.9c96.9 96.8 96.9 253.8 0 350.6-96.9 96.8-253.9 96.8-350.8 0L431.4 80.9z"></path><path fill="#2E4D72" d="M502.4 283.7 323 104.4l-93.2 93.1 5.5 5.5-53 53 43.4 43.4-5.7 5.7 47 47-54.2 54.1 92.6 92.5c104.4-21 185-107.6 197-215z"></path><path fill="#FFF" d="M212.6 163.7v41.6h-30.5v50.8h30.5v151.1h62.6V256.1h42s3.9-24.4 5.8-51h-47.6v-34.8c0-5.2 6.8-12.2 13.6-12.2h34.1v-52.9h-46.4c-65.6 0-64.1 50.9-64.1 58.5z"></path></svg></a></li>
+      </ul> -->
     </footer>
+  </div>
   </div>
 </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
